@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int HashFunction(int k, int kol, int* A)
+{
+    return (k%10);
+    if (A[k]!= 0)
+    {
+        kol=kol+1;
+    }
+}
+int main()
+{
+    int n;
+    int kol = 0;
+    int A[10];
+    do
+    {
+        cout<<"Полученное на преобразование число "; 
+        cin>>n;
+        cout<<"Hash"<<n<<")="<<HashFunction(n, kol, A)<<endl;
+        int n;
+    }
+    while(n!=0);
+    cout<<"Количество коллизий"<<kol<<endl;
+}
